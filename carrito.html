@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Mariscos La Paz</title>
+</head>
+<body  class="fondo-productos">
+    <header>
+		<a id="id"></a>
+		<div class="barra-menu-principal">
+			<div class="menu-izquierda">
+				<a href="principal.html"><img class="menu-elemento logo-empresa" src="img/logotrans.png"></a>
+
+			</div>
+			<div class="menu-derecha">
+				<a href="principal.html" class="menu-elemento menu-elemento-texto">Inicio</a>
+				<a href="productos.html" class="menu-elemento menu-elemento-texto">Productos</a>
+				<a href="contacto.html" class="menu-elemento menu-elemento-texto"> Reservaciones</a>
+				<div class="menu-elemento">
+					<a href="carrito.html" class="fas fa-shopping-cart fa-lg menu-elemento-icono"tabindex="-1" id="cart" ></a> <!--Carrito-->
+					<span id="productQuantity">0</span> <!-- product quantity -->
+				</div>
+				<a href="index.html"class="menu-elemento menu-elemento-texto">Cerrar Sesión</a>
+			</div>
+		</div>
+	</header>
+
+
+    <main class="main-marco">
+			   	
+		<div class="marco">
+			<div class="titulo-pagina">
+				Carrito de compras
+			</div>
+			
+			<div class="productos-centrado">
+				<div class="productos" >
+			
+					<div class="lista-carrito  " id="products-list">
+						<table class="table d-none text-center ">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col ">Fotografia</th>
+									<th scope="col">Producto</th>
+									<th scope="col">Costo</th>
+									<th scope="col">Cantidad</th>
+									<th scope="col"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+					
+			</div>
+		</div>
+
+		<div class="espacio-2">
+			<a href="#id" class="btn-cambio btn-arriba" style="padding-bottom: 30px;">
+				<i class="fas fa-arrow-circle-up fa-lg btn-icono" style=" color:white;"></i><!--arriba-->
+			</a>
+		</div>
+	</main>
+
+<footer >
+		Programado por: 
+		<br>
+		-Brian Alfredo Rodríguez Ramírez
+		<br>
+		-Martín Samuel Calderón Ojeda
+		<br>
+		<br>
+		Carretera al Sur KM 5.5, Apartado Postal 19-B, C.P. 23080 <br> La Paz, Baja California Sur, México. 
+		<br>
+		Teléfono: (612) 12 388 00
+		<br>
+		Mariscos la paz(c)
+	</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/3f7e3de7b3.js" crossorigin="anonymous"></script>
+	<script src="js/carrito.js"></script>
+	<script src="js/principal.js"></script>
+</body>
+</html>

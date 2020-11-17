@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Mariscos La Paz</title>
+</head>
+<body class="fondo-productos">
+
+   <header>
+		<a id="id"></a>
+		<div class="barra-menu-principal">
+			<div class="menu-izquierda">
+				<a href="principal.html"><img class="menu-elemento logo-empresa" src="img/logotrans.png"></a>
+
+			</div>
+			<div class="menu-derecha">
+				<a href="principal.html" class="menu-elemento menu-elemento-texto">Inicio</a>
+				<a href="productos.html" class="menu-elemento menu-elemento-texto">Productos</a>
+				<a href="contacto.html" class="menu-elemento menu-elemento-texto"> Reservaciones</a>
+				<div class="menu-elemento">
+					<a href="carrito.html" class="fas fa-shopping-cart fa-lg menu-elemento-icono"tabindex="-1" id="cart" ></a> <!--Carrito-->
+					<span id="productQuantity">0</span> <!-- product quantity -->
+				</div>
+				<a href="index.html"class="menu-elemento menu-elemento-texto">Cerrar Sesión</a>
+			</div>
+		</div>
+	</header>
+
+    <main class="main-marco">
+        <div class="marco">
+			<div class="titulo-pagina">
+				Nuestros productos
+            </div>
+            
+            <div class="productos-centrado">
+				<div class="productos" >
+					<h2 class="subtitulo-cartelera ">Tacos</h2>
+
+                   
+                        <div class="block product" id="product1">
+                            <img src="img/tacosdepescado.jpg" class="img_producto">
+                            <div>
+                                <h3>Tacos de pescado</h3>
+                                <p class="desc-producto">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut</p>
+                                <p >Existencias:<span id="cantidad1">7</span></p>
+                                <p style="color: green;">$<span>63.00</span></p>
+                                <a href="#" class="add btn-comprar">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="block product" id="product2">
+                            <img src="img/tacosdecamaron.jpg" class="img_producto">
+                            <div>
+                                <h3 class="card-title">Tacos de camaron</h3>
+                                <p class="desc-producto">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut</p>
+                                <p >Existencias:<span id="cantidad2">7</span></p>
+                                <p style="color: green;">$<span>63.00</span></p>
+                                <a href="#" class="add btn-comprar">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="block product" id="product3">
+                            <img src="img/tacosdemarlin.jpg" class="img_producto">
+                            <div>
+                                <h3 class="card-title">Tacos de marlin</h3>
+                                <p class="desc-producto">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut</p>
+                                <p >Existencias:<span id="cantidad3">7</span></p>
+                                <p style="color: green;">$<span>63.00</span></p>
+                                <a href="#" class="add btn-comprar">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="block product" id="product4">
+                            <img src="img/tacosdeatun.jpg" class="img_producto" >
+                            <div>
+                                <h3 class="card-title">Tacos de atún</h3>
+                                <p class="desc-producto">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut</p>
+                                <p >Existencias:<span id="cantidad4">7</span></p>
+                                <p style="color: green;">$<span>63.00</span></p>
+                                <a href="#" class="add btn-comprar">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productos">
+                        <h2 class="subtitulo-cartelera">Cocteles</h2>
+
+                        <div class="block product" id="product5">
+                            <img src="img/coctelcamaron.jpg"  class="img_producto">
+                            <div>
+                                <h3 class="card-title">Coctel de camaron</h3>
+                                <p class="desc-producto">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut</p>
+                                <p >Existencias:<span id="cantidad5">7</span></p>
+                                <p style="color: green;">$<span>63.00</span></p>
+                                <a href="#" class="add btn-comprar">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="block product" id="product6">
+                            <img src="img/coctel-pulpo.jpg" class="img_producto">
+                            <div>
+                                <h3 class="card-title">Coctel de pulpo</h3>
+                                <p class="desc-producto">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut</p>
+                                <p >Existencias:<span id="cantidad6">7</span></p>
+                                <p style="color: green;">$<span>63.00</span></p>
+                                <a href="#" class="add btn-comprar">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="block product" id="product7">
+                            <img src="img/pulpo-camaron.jpg" class="img_producto">
+                            <div>
+                                <h3 class="card-title">Pulpo y camaron</h3>
+                                <p class="desc-producto">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut</p>
+                                <p >Existencias:<span id="cantidad7">7</span></p>
+                                <p style="color: green;">$<span>63.00</span></p>
+                                <a href="#" class="add btn-comprar">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="block product" id="product8">
+                            <img src="img/coctelcampechana.jpg" class="img_producto">
+                            <div>
+                                <h3 class="card-title">Campechana</h3>
+                                <p class="desc-producto">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut</p>
+                                <p >Existencias:<span id="cantidad8">7</span></p>
+                                <p style="color: green;">$<span>63.00</span></p>
+                                <a href="#" class="add btn-comprar">Comprar</a>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="productos">
+                        <h2 class="subtitulo-cartelera">Otros platillos</h2>
+
+                        <div class="block product" id="product9">
+                            <img src="img/filete-pescado.jpg"  class="img_producto">
+                            <div>
+                                <h3 class="card-title">Filete de pescado</h3>
+                                <p class="desc-producto">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut</p>
+                                <p >Existencias:<span id="cantidad9">7</span></p>
+                                <p style="color: green;">$<span>63.00</span></p>
+                                <a href="#" class="add btn-comprar">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="block product" id="product10">
+                            <img src="img/empanizado.jpg" class="img_producto">
+                            <div>
+                                <h3 class="card-title">Pescado empanizado</h3>
+                                <p class="desc-producto">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut</p>
+                                <p >Existencias:<span id="cantidad10">7</span></p>
+                                <p style="color: green;">$<span>63.00</span></p>
+                                <a href="#" class="add btn-comprar">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="block product" id="product11">
+                            <img src="img/fritos.jpg" class="img_producto">
+                            <div>
+                                <h3 class="card-title">Camaron empanizado</h3>
+                                <p class="desc-producto">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut</p>
+                                <p >Existencias:<span id="cantidad11">7</span></p>
+                                <p style="color: green;">$<span>63.00</span></p>
+                                <a href="#" class="add btn-comprar">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="block product" id="product12">
+                            <img src="img/aguachile.jpg" class="img_producto">
+                            <div>
+                                <h3 class="card-title">Aguachile</h3>
+                                <p class="desc-producto">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut</p>
+                                <p >Existencias:<span id="cantidad12">7</span></p>
+                                <p style="color: green;">$<span>63.00</span></p>
+                                <a href="#" class="add btn-comprar">Comprar</a>
+                            </div>
+                        </div>
+                     </div>
+        </div>
+    </main>
+
+<footer >
+		Programado por: 
+		<br>
+		-Brian Alfredo Rodríguez Ramírez
+		<br>
+		-Martín Samuel Calderón Ojeda
+		<br>
+		<br>
+		Carretera al Sur KM 5.5, Apartado Postal 19-B, C.P. 23080 <br> La Paz, Baja California Sur, México. 
+		<br>
+		Teléfono: (612) 12 388 00
+		<br>
+		Mariscos la paz(c)
+	</footer>
+
+    <script src="https://kit.fontawesome.com/3f7e3de7b3.js" crossorigin="anonymous"></script>
+    <script src="js/principal.js"></script>
+</body>
+</html>
