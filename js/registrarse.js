@@ -7,5 +7,6 @@ function registrarse() {
     localStorage.setItem(email, password, nombre, apellido);
     alert("Su cuenta ha sido registrada");   
     document.getElementById("registrarse").reset();
+    location.href = 'index.html';
      
 }
